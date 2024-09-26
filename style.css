@@ -359,28 +359,74 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-top: 2rem;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.details-container {
+  width: 30%;
+  padding: 1.5rem;
   background: rgb(250, 250, 250);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 2rem;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: auto;
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 1rem 0;
   color: black;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
 }
+
+.project-btn:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .details-container {
+    width: 45%;
+  }
+
+  .project-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .details-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
 
 /* CONTACT */
 
